@@ -155,7 +155,7 @@
                             name="ssn"
                             id="ssn"
                             required
-                            title="Numbers only"
+                            title="Enter a 9-digit SSN with numbers only (no dashes)"
                             placeholder="123456789"
                             onblur="validateSsn()"
                         />
@@ -340,8 +340,10 @@
                             title="Enter your Email Address"
                             placeholder="uhTP@gmai.com"
                             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,20}$"
+                            onblur="validateEmail()"
                         />
                         </td>
+                        <span class="error" id="Email-error"></span>
                 
                         
                 <tr>
@@ -356,7 +358,10 @@
                             title="Enter your Phone Number"
                             placeholder="222-222-2222"
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                            onblur="validatePhone()"
                         />
+                        <br>
+                        <span class="error" id="Phone-error"></span>
                         </td>
 
                 <tr>

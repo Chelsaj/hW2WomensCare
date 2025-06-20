@@ -83,7 +83,7 @@ function validateZipCode() {
 //Email Validation js code
 var emailR = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 function validateEmail() {
-  const emailInput = document.getElementById("email").value.trim();
+  const emailInput = document.getElementById("Email").value.trim();
   const errorSpan = document.getElementById("email-error");
 
   if (!emailInput) {
