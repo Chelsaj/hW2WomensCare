@@ -35,7 +35,7 @@
         </header>
 <hr>
 <!--form starts here-->
-<form action="thankyou.html">
+<form id="signup" action="thankyou.html" onsubmit="return validateForm();">
     <center>
         <div class="format">
             <table>
@@ -129,8 +129,7 @@
                         Other
                     </td>
                 </tr>
-                
-                <form id="signup" onsubmit="return validateForm()"></form>            
+
                 <tr>
                     <td class="td1"><label for="DOB">Date of Birth:</label></td>
                     <td>
@@ -138,9 +137,8 @@
                         type="date"
                         id= "DOB"
                         name="DOB"
-                        required
                         onblur="validateDOB()"
-                        
+                        required
                     />
                     <br>
                     <span class="error" id="DOB-error"></span>    

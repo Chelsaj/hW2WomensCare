@@ -25,12 +25,10 @@ slider.oninput = function () {
 //DOB validation js code
 //Introduces a maximum age limit for valid dates.
 function validateDOB() {
-    let DOB = document.getElementById("DOB");
+    DOB = document.getElementById("DOB");
     let date = new Date(DOB.value);
-    let maxDate = new Date();
-    maxDate.setFullYear(today.getFullYear() - 120);
+    let maxDate = new Date().setFullYear(new Date().getFullYear() - 120);
 
-    // Clear previous error message
     if (date > new Date()) {
         document.getElementById("DOB-error").innerHTML = 
         "Date can't be in the future";
