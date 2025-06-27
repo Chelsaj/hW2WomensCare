@@ -84,7 +84,7 @@ function validateZipCode() {
 var emailR = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 function validateEmail() {
   const emailInput = document.getElementById("Email").value.trim();
-  const errorSpan = document.getElementById("email-error");
+  const errorSpan = document.getElementById("Email-error");
 
   if (!emailInput) {
     errorSpan.textContent = "Email cannot be blank.";
