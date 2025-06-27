@@ -187,8 +187,7 @@
                             placeholder="4750 Calhoun Rd"
                             onblur="validateAddress1()"
                         />
-                        <br>
-                       <span class="error" id="address1-error"></span>
+                        <br /><span class="error" id="address1-error"></span>
                         </td>
                 </tr>
 
@@ -205,8 +204,7 @@
                             placeholder="MH 114"
                             onblur="validateAddress2()"
                         />
-                        <br>
-                       <span class="error" id="address2-error"></span>
+                        <br /><span class="error" id="address2-error"></span>
                         </td>
                 </tr>
 
@@ -223,7 +221,7 @@
                             placeholder="Houston"
                             onblur="validateCity()"
                         />
-                        <span class="error" id="city-error"></span>
+                         <br /><span class="error" id="city-error"></span>
                         </td>
                 </tr>
 
@@ -304,8 +302,7 @@
                             pattern="^\d{5}(-\d{4})?$"
                             onblur="validateZipCode()"
                         />
-                        <br>
-                        <span class="error" id="zipcode-error"></span>
+                        <br /><span class="error" id="state-error"></span>
                         </td>
                 </tr>
 
@@ -342,17 +339,18 @@
                             pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,20}$"
                             onblur="validateEmail()"
                         />
+                        <br /><span class="error" id="Email-error"></span>
                         </td>
-                        <span class="error" id="Email-error"></span>
+                        
                 
                         
                 <tr>
-                    <td class="td1"><label for="Phone">Phone Number:</label></td>
+                    <td class="td1"><label for="phone">Phone Number:</label></td>
                         <td>
                             <input
                             type="text"
-                            name="Phone"
-                            id="Phone"
+                            name="phone"
+                            id="phone"
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"                                                       
                             required
                             title="Enter your Phone Number"
@@ -360,8 +358,7 @@
                             pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
                             onblur="validatePhone()"
                         />
-                        <br>
-                        <span class="error" id="Phone-error"></span>
+                          <br /><span class="error" id="phone-error"></span>
                         </td>
 
                 <tr>
