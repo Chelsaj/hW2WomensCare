@@ -59,6 +59,22 @@ function validateSsn() {
     }
 }
 
+//Address Validation 
+function validateAddress1() {
+    var ad1 = document.getElementById("address1").value.trim();
+    console.log(ad1);
+    console.log(ad1.length);
+
+    if (ad1.length < 2) {
+        document.getElementById("address1-error").innerHTML = 
+        "Please enter something for Address 1";
+        return false;
+    } else {
+        document.getElementById("address1-error").innerHTML = "";
+        return true;
+    }
+}
+
 //ZIP Code Validation js code
 function validateZipCode() {
     const zipInput = document.getElementById("ZipCode");
@@ -178,7 +194,7 @@ function validatePassword(pword, uid) {
 
 function confirmPword() {
     let pword1 = document.getElementById("pword").value;
-    let pword2 = document.getElementById("con_pword").value;
+    let pword2 = document.getElementById("confirm_pWord").value;
 
 
     if (pword1 !== pword2) {
